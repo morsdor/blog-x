@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+import styles from './Button.module.css'
 
 export type ButtonProps = {
   children: React.ReactNode;
@@ -24,13 +25,14 @@ export default function Button({
 }: ButtonProps) {
   const classList = [];
 
-  if (primary) classList.push("primary");
-  else if (secondary) classList.push("secondary");
+  if (secondary) classList.push(styles["secondary"]);
+  else classList.push(styles["primary"]);
 
-  if (block) classList.push("block");
-  else if (outline) classList.push("outline");
+  
+  if (outline) classList.push(styles["outline"]);
+  else classList.push(styles["block"]);
 
-  classList.push(size);
+  classList.push(styles[size]);
 
   const classListToStr = classList.join(" ");
 

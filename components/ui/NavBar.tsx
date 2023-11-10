@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className={styles.left}> BLOG-X</div>
       <div className={styles.middle}> THIS IS MID AREA</div>
       <div className={styles.right}>
-        <Button> Sign IN</Button>
+        <Button secondary={true} > Sign IN</Button>
       </div>
     </nav>
   );
