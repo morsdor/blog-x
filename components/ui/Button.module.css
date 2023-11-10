@@ -1,0 +1,21 @@
+
+.primary{
+    background: blue;
+}
+
+.secondary{
+    background: green
+}
+
+.danger{
+    background: red;
+}
+
+.outline{
+    background: none;
+    border: 1px solid blue
+}
+
+.block{
+    border: 1px solid black;
+}
